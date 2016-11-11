@@ -27,7 +27,7 @@ set omnifunc=syntaxcomplete#Complete
 " autocomplete
 let g:neocomplete#enable_at_startup = 1
 "let g:neocomplete#enable_smart_case = 1
-"let g:neocomplete#enable_auto_select = 0
+let g:neocomplete#enable_auto_select = 0
 
 " Map z and r to reset folding
 let g:vim_json_syntax_conceal = 0
@@ -136,5 +136,3 @@ let g:syntastic_puppet_checkers        = ['puppetlint']
 let g:syntastic_puppet_puppetlint_args = '--no-80chars-check'
 let g:syntastic_python_checkers = ['pep8', 'pylint']
 let g:syntastic_go_checkers =['golint', 'govet', 'errcheck']
-
-
