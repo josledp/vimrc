@@ -22,6 +22,9 @@ Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'scrooloose/syntastic'
 """"""""""""""""""""""""""""""
 
+filetype plugin indent on     " required!
+set omnifunc=syntaxcomplete#Complete
+
 " autocomplete
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
@@ -131,6 +134,4 @@ let g:go_highlight_build_constraints = 1
 let g:go_fmt_command ="goimports"
 "let g:go_fmt_autosave = 1
 "
-filetype plugin indent on     " required!
-set omnifunc=syntaxcomplete#Complete
 
