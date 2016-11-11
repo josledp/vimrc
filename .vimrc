@@ -12,6 +12,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'fatih/vim-go'
 Plugin 'Shougo/neocomplete.vim'
+Plugin 'Shougo/neosnippet'
+Plugin 'Shougo/neosnippet-snippets'
 Plugin 'rodjek/vim-puppet'
 Plugin 'godlygeek/tabular'
 Plugin 'Matt-Deacalion/vim-systemd-syntax'
@@ -23,6 +25,7 @@ Plugin 'scrooloose/syntastic'
 " autocomplete
 let g:neocomplete#enable_at_startup = 1
 let g:neocomplete#enable_smart_case = 1
+
 """"""""""""""""""""""""""""""
 
 " Map z and r to reset folding
@@ -129,3 +132,5 @@ let g:go_fmt_command ="goimports"
 "let g:go_fmt_autosave = 1
 "
 filetype plugin indent on     " required!
+set omnifunc=syntaxcomplete#Complete
+
