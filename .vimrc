@@ -21,6 +21,7 @@ Plugin 'elzr/vim-json'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'scrooloose/syntastic'
 """"""""""""""""""""""""""""""
+call vundle#end()
 
 filetype plugin indent on     " required!
 set omnifunc=syntaxcomplete#Complete
