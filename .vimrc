@@ -27,9 +27,25 @@ set omnifunc=syntaxcomplete#Complete
 
 " autocomplete
 let g:neocomplete#enable_at_startup = 1
-let g:neocomplete#enable_smart_case = 1
-
+"let g:neocomplete#enable_smart_case = 1
 """"""""""""""""""""""""""""""
+" Plugin key-mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" SuperTab like snippets behavior.
+"imap <expr><TAB>
+" \ pumvisible() ? "\<C-n>" :
+" \ neosnippet#expandable_or_jumpable() ?
+" \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+" For conceal markers.
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+endif
 
 " Map z and r to reset folding
 let g:vim_json_syntax_conceal = 0
@@ -116,11 +132,6 @@ nmap <C-j> :tabprevious<CR>
 nmap <C-k> :tabnext<CR>
 nmap <C-t> :tabnew<CR>
 
-let g:syntastic_puppet_checkers        = ['puppetlint']
-let g:syntastic_puppet_puppetlint_args = '--no-80chars-check'
-let g:syntastic_python_checkers = ['pep8', 'pylint']
-let g:syntastic_go_checkers =['golint', 'govet', 'errcheck']
-
 let python_space_errors         = 1
 let python_highlight_all        = 1
 
@@ -134,4 +145,9 @@ let g:go_highlight_build_constraints = 1
 let g:go_fmt_command ="goimports"
 "let g:go_fmt_autosave = 1
 "
+let g:syntastic_puppet_checkers        = ['puppetlint']
+let g:syntastic_puppet_puppetlint_args = '--no-80chars-check'
+let g:syntastic_python_checkers = ['pep8', 'pylint']
+let g:syntastic_go_checkers =['golint', 'govet', 'errcheck']
+
 
