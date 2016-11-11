@@ -114,6 +114,11 @@ nmap <C-j> :tabprevious<CR>
 nmap <C-k> :tabnext<CR>
 nmap <C-t> :tabnew<CR>
 
+" Split window
+nmap <C-l> :vs<CR>
+nmap <C-h> :sp<CR>
+nmap <C-c> <C-w><C-w><C-w>q
+
 let python_space_errors         = 1
 let python_highlight_all        = 1
 
