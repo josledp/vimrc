@@ -132,7 +132,6 @@ let g:go_highlight_build_constraints = 1
 let g:go_fmt_command ="goimports"
 "let g:go_fmt_autosave = 1
 "
-let g:syntastic_puppet_checkers        = ['puppetlint']
 let g:syntastic_puppet_puppetlint_args = '--no-80chars-check'
 let g:syntastic_python_checkers = ['pep8', 'pylint']
 let g:syntastic_go_checkers =['golint', 'govet', 'errcheck']
