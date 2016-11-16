@@ -75,8 +75,8 @@ set wildignore=*.swp,*.bak,*.pyc,*.class
 set title                " change the terminal's title
 set visualbell           " don't beep
 set noerrorbells         " don't beep
-"highlight ColorColumn ctermbg=232 guibg=232
-set colorcolumn=80       " Print a line in column 80
+set colorcolumn=81       " Print a line in column 81
+highlight ColorColumn ctermfg=7 ctermbg=5
 
 " Do not write backup files when editing a file
 set nobackup
