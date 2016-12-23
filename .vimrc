@@ -18,11 +18,14 @@ Plugin 'Matt-Deacalion/vim-systemd-syntax'
 Plugin 'elzr/vim-json'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'scrooloose/syntastic'
+Plugin 'Raimondi/delimitMate'
 """"""""""""""""""""""""""""""
 call vundle#end()
 
 filetype plugin indent on     " required!
 set omnifunc=syntaxcomplete#Complete
+
+let g:delimitMate_expand_cr = 1
 
 " autocomplete
 let g:neocomplete#enable_at_startup = 1
