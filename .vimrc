@@ -92,12 +92,13 @@ set listchars=tab:>.,trail:.,extends:#,nbsp:.
 if has('autocmd')
   autocmd filetype html,xml set listchars-=tab:>.
   autocmd FileType go set nolist
+  autocmd FileType make set nolist
   autocmd FileType go setlocal ts=2 sw=2
   autocmd filetype python set expandtab tabstop=4 shiftwidth=4
   autocmd filetype puppet set expandtab tabstop=2 shiftwidth=2
   autocmd FileType json map zr :syn sync fromstart<CR>
-  autocmd FileType json set foldmethod=syntax
-  autocmd FileType json set foldlevel=100
+  "autocmd FileType json set foldmethod=syntax
+  "autocmd FileType json set foldlevel=100
 endif
 
 " Toggle paste mode on/off with <leader>p
