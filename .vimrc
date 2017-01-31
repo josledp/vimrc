@@ -111,7 +111,7 @@ set pastetoggle=<leader>p
 cmap w!! w !sudo tee % >/dev/null
 
 " Toggle NerdTree
-map <C-e> :NERDTreeToggle<CR>
+map <C-d> :NERDTreeToggle<CR>
 
 " Tab configure
 nmap <C-j> :tabprevious<CR>
