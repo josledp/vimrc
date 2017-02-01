@@ -19,6 +19,7 @@ Plugin 'elzr/vim-json'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'Raimondi/delimitMate'
+Plugin 'davidhalter/jedi-vim'
 """"""""""""""""""""""""""""""
 call vundle#end()
 
