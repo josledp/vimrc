@@ -143,4 +143,7 @@ nmap <C-p> :GoDefPop<CR>
 let g:syntastic_puppet_puppetlint_args = '--no-80chars-check'
 let g:syntastic_python_checkers = ['pep8', 'pylint']
 let g:syntastic_go_checkers =['golint', 'govet', 'errcheck']
+
+"syntax
+set background=dark
 syntax on
