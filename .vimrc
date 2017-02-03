@@ -80,7 +80,7 @@ set title                " change the terminal's title
 set visualbell           " don't beep
 set noerrorbells         " don't beep
 set colorcolumn=81       " Print a line in column 81
-highlight ColorColumn ctermfg=7 ctermbg=5
+highlight ColorColumn ctermfg=7 ctermbg=blue
 
 " Do not write backup files when editing a file
 set nobackup
@@ -149,4 +149,19 @@ let g:syntastic_go_checkers =['golint', 'govet', 'errcheck']
 set background=dark
 syntax on
 set scrolloff=5
+
+
+"""""testing
+"line numbers
+set number
+highlight LineNr ctermfg=white ctermbg=blue
+"wrap lines
+set wrap
+set textwidth=79
+set formatoptions=qrn1
+"movement for wrap lines
+map <Up> gk
+map <Down> gj
+map k gk
+map j gj
 
