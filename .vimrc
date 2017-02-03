@@ -148,3 +148,5 @@ let g:syntastic_go_checkers =['golint', 'govet', 'errcheck']
 "syntax
 set background=dark
 syntax on
+set scrolloff=5
+
