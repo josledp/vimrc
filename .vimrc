@@ -151,6 +151,8 @@ syntax on
 set scrolloff=5
 
 
+"redraw
+map <C-s> :redraw!<CR>
 """""testing
 "line numbers
 set number
@@ -164,4 +166,3 @@ map <Up> gk
 map <Down> gj
 map k gk
 map j gj
-
