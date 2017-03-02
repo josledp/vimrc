@@ -142,7 +142,7 @@ nmap <C-p> :GoDefPop<CR>
 "let g:go_fmt_autosave = 1
 "
 let g:syntastic_puppet_puppetlint_args = '--no-80chars-check'
-let g:syntastic_python_checkers = ['pep8', 'pylint']
+let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_go_checkers =['golint', 'govet', 'errcheck']
 
 "syntax
@@ -150,9 +150,9 @@ set background=dark
 syntax on
 set scrolloff=5
 
-
 "redraw
-map <C-s> :redraw!<CR>
+nmap <C-b> :redraw!<CR>
+
 """""testing
 "line numbers
 set number
