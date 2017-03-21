@@ -20,6 +20,7 @@ Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'Raimondi/delimitMate'
 Plugin 'davidhalter/jedi-vim'
+Plugin 'hashivim/vim-terraform'
 """"""""""""""""""""""""""""""
 call vundle#end()
 
@@ -127,6 +128,10 @@ nmap <C-c> <C-w><C-w><C-w>q
 let python_space_errors         = 1
 let python_highlight_all        = 1
 
+" terraform
+let g:terraform_align = 1
+let g:terraform_fmt_on_save = 1
+
 " vim-go
 let g:go_highlight_functions = 1
 let g:go_highlight_methods = 1
@@ -153,7 +158,6 @@ set scrolloff=5
 "redraw
 nmap <C-b> :redraw!<CR>
 
-"""""testing
 "line numbers
 set number
 highlight LineNr ctermfg=white ctermbg=blue
