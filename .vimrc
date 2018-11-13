@@ -19,7 +19,6 @@ Plugin 'elzr/vim-json'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'Raimondi/delimitMate'
-Plugin 'davidhalter/jedi-vim'
 Plugin 'hashivim/vim-terraform'
 Plugin 'Glench/Vim-Jinja2-Syntax'
 """"""""""""""""""""""""""""""
